@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="EUC-KR">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- form태그 : 데이터를 전송할 때 사용하는 태그 -->
+    <form action="ex09join" method="post">
+        <!-- type="text" : 데이터를 입력할 수 있는 태그 -->
+        <!-- name속성 : 사용자가 입력한 값을 구분하기 위해서 지정 -->
+        아이디 입력 : <input type="text" name="id" value="smhrd"> <br>
+        이름 입력 : <input type="text" name="name" placeholder="이름을 입력하세요"> <br>
+        비밀번호 입력 : <input type="password" name="pw">
+        <hr>
+        <!-- 목록상자 : select -->
+        메일 선택
+        <select name="mail">
+            <option value="naver"> 네이버 </option>
+            <option value="google"> 구글 </option>
+            <option value="daum"> 다음 </option>
+        </select>
+        <hr>
+        <h3> 체크박스 : 좋아하는 음식을 고르시오 </h3>
+        <!-- type="checkbox" 여러개 선택 가능 -->
+        치킨 <input type="checkbox" name="food" value="chicken">
+        파스타 <input type="checkbox" name="food" value="pasta">
+        피자 <input type="checkbox" name="food" value="pizza">
+
+        <h3> 체크박스 : 좋아하는 취미를 고르시오 </h3>
+        게임 <input type="checkbox" name="hobby" value="game">
+        낮잠 <input type="checkbox" name="hobby" value="sleep">
+        <hr>
+        <h3> 라디오 : 당신의 성별을 고르시오 </h3>
+        <!-- type="radio" 한개만 선택 가능 -->
+        여성 <input type="radio" name="gender" value="female">
+        남성 <input type="radio" name="gender" value="male">
+
+        <hr>
+        색깔선택
+        <input type="color" name="color">
+
+
+        <hr>
+        게시글 작성 <br>
+        <!-- cols : 열의 크기(가로)
+             row : 행의 길이(세로) -->
+        <textarea name="board" cols="20" rows="5" style="resize: none;"></textarea>
+        <hr>
+        <!-- reset : input요소의 모든 값을 초기화 -->
+        <input type="reset" value="다지우기!">
+        <!-- submit : input요소의 모든 값을 전송할 때 누르는 버튼 -->
+        <input type="submit" value="회원가입">
+    </form>
+
+    <!-- 정렬 : Ctrl+K+F -->
+    <br><br><br><br><br><br><br><br><br><br>
+</body>
+
+</html>

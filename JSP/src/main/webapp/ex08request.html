@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1> JSP로 데이터 전송 </h1>
+	<!-- 데이터 전송 조건 3가지 : action, name, submit + method -->
+	<!-- form태그 action 문자열 -> 이 문자열을 가진 servlet을 찾게된다.
+								확장자를 써주어야 .jsp 파일로 가게 된다 -->
+	
+	<form action="ex08request.jsp">
+		<input type="text" name="data"> 
+		<input type="submit" value="전송"> 
+	</form>
+</body>
+</html>
